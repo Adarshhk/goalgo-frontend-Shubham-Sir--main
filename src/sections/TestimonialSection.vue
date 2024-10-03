@@ -36,7 +36,7 @@ const testimonals = [
           Don't take <br />
           <span class="text-algo-orange">our word for it</span>
         </h1>
-        <p class="text-[#8C8C8C] text-[16px] md:w-[80%] xl:w-full font-black">
+        <p class="text-[#8C8C8C] text-[16px] md:w-[80%] xl:w-full font-light">
           Our support team is available around the clock to help you with any
           questions or issues you may have.
         </p>
@@ -51,7 +51,7 @@ const testimonals = [
 
               <div class="">
                 <p class="font-[19px]">{{ testimonial.user }}</p>
-                <p class="font-black text-[#8C8C8C] text-[16px]">Invester</p>
+                <p class="font-light text-[#8C8C8C] text-[16px]">Invester</p>
               </div>
             </div>
 

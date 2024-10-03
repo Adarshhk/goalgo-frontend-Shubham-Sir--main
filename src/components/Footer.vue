@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup>
+
+const redirectToLogin = () => {
+  window.location.href = "https://app.way2algo.com/";
+}
+</script>
 
 <template>
   <footer class="pt-10 px-6 md:pt-20 md:px-10 pb-10 3xl:max-w-[85%] mx-auto">
@@ -8,7 +13,7 @@
         <a href="/">
           <img src="../assets/images/Logo.png" alt="" class="w-[80%]" />
         </a>
-        <p class="font-black text-gray-400">
+        <p class="font-light text-gray-400">
           Keep all your health records in one secure place for easy access to
           your medical history during doctor visits.
         </p>
@@ -16,7 +21,7 @@
       <div class="text-[16px] space-y-4 justify-self-start md:justify-self-center mt-8 md:mt-0">
         <p>Quick Link</p>
         <div class="text-[#89A3B2] space-y-2">
-          <p>Register Now</p>
+          <a href="https://app.way2algo.com/" class="hover:underline">Register Now</a>
           <p>Features</p>
           <p>Services</p>
           <p>Why US</p>

@@ -1,13 +1,17 @@
 <script setup>
 import Button from '../components/Button.vue';
 import BorderButton from '../components/BorderButton.vue';
+
+const redirectToLogin = () => {
+  window.location.href = "https://app.way2algo.com/";
+}
 </script>
 
 <template>
     <section class="px-6 md:px-10 py-20 font-Inter 3xl:max-w-[85%] mx-auto">
         <div class="text-center">
             <h1 class="text-[58px] xl:text-[64px]">Our <span class="text-algo-orange">Pricing</span></h1>
-            <p class="text-[#8C8C8C] mx-auto w-[90%] xl:w-[70%]  font-black text-[16px]">Our pricing plans are designed to suit traders of all levels, offering flexible options without hidden fees. Get access to premium features and expert tools that help you maximize your returns while minimizing costs.</p>
+            <p class="text-[#8C8C8C] mx-auto w-[90%] xl:w-[70%]  font-light text-[16px]">Our pricing plans are designed to suit traders of all levels, offering flexible options without hidden fees. Get access to premium features and expert tools that help you maximize your returns while minimizing costs.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 mt-20 2xl:px-20 md:gap-[425px] lg:gap-[300px] xl:gap-6 overflow-x-auto space-y-8 md:space-y-0">
             <div class="p-6 space-y-4 bg-white bg-opacity-5 border border-white border-opacity-20 rounded-xl md:min-w-[400px] xl:min-w-0">
@@ -17,7 +21,7 @@ import BorderButton from '../components/BorderButton.vue';
                 </div>
                 <div class="space-y-2">
                    <p class="font-semibold text-[56px]">$0 <span class="font-light text-[16px]">/ Month</span></p>
-                   <BorderButton title="Get Started Now" class="rounded-sm"/>
+                   <BorderButton @click="redirectToLogin" title="Get Started Now" class="rounded-sm"/>
                 </div>
                 <div class="space-y-4">
                     <li class="flex items-center gap-2">
@@ -64,7 +68,7 @@ import BorderButton from '../components/BorderButton.vue';
                 </div>
                 <div class="space-y-2">
                    <p class="font-semibold text-[56px]">$25 <span class="font-light text-[16px]">/ Month</span></p>
-                   <Button title="Get Started Now" class="w-full py-3 rounded-sm"/>
+                   <Button @click="redirectToLogin" title="Get Started Now" class="w-full py-3 rounded-sm"/>
                 </div>
                 <div class="space-y-4">
                     <li class="flex items-center gap-2">
@@ -112,7 +116,7 @@ import BorderButton from '../components/BorderButton.vue';
                 </div>
                 <div class="space-y-2">
                    <p class="font-semibold text-[56px]">$100 <span class="font-light text-[16px]">/ Month</span></p>
-                   <BorderButton title="Get Started Now" class="rounded-sm"/>
+                   <BorderButton @click="redirectToLogin" title="Get Started Now" class="rounded-sm"/>
                 </div>
                 <div class="space-y-4">
                     <li class="flex items-center gap-2">

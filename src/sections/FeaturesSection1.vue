@@ -6,7 +6,7 @@
       class="flex flex-col items-center py-10 border border-white border-opacity-20 rounded-3xl"
     >
       <h3 class="font-Inter font-bold text-[35px]">5000+</h3>
-      <p class="font-Inter font-black text-[16px] tracking-wider">
+      <p class="font-Inter font-light text-[16px] tracking-wider">
         Active Users
       </p>
     </div>
@@ -14,7 +14,7 @@
       class="flex flex-col items-center py-10 border border-white border-opacity-20 rounded-3xl"
     >
       <h3 class="font-Inter font-bold text-[35px]">99.9%</h3>
-      <p class="font-Inter font-black text-[16px] tracking-wider">
+      <p class="font-Inter font-light text-[16px] tracking-wider">
         Trade Execution Accuracy
       </p>
     </div>
@@ -22,7 +22,7 @@
       class="flex flex-col items-center py-10 border border-white border-opacity-20 rounded-3xl"
     >
       <h3 class="font-Inter font-bold text-[35px]">12+</h3>
-      <p class="font-Inter font-black text-[16px] tracking-wider">
+      <p class="font-Inter font-light text-[16px] tracking-wider">
         Customizable Strategies
       </p>
     </div>
@@ -30,7 +30,7 @@
       class="flex flex-col items-center py-10 border border-white border-opacity-20 rounded-3xl"
     >
       <h3 class="font-Inter font-bold text-[35px]">24/7</h3>
-      <p class="font-Inter font-black text-[16px] tracking-wider">
+      <p class="font-Inter font-light text-[16px] tracking-wider">
         Real-Time Monitoring
       </p>
     </div>

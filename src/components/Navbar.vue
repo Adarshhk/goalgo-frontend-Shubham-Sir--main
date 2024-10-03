@@ -9,6 +9,9 @@ const props = defineProps({
   handleScroll : Function,
 })
 
+const redirectToLogin = () => {
+  window.location.href = "https://app.way2algo.com/";
+}
 </script>
 
 <template>
@@ -32,7 +35,7 @@ const props = defineProps({
       <a href="#testimonal" class="font-thin hover:font-semibold cursor-pointer transition-all">Testimonials</a>
      
     </div>
-     <Button class="hidden xl:block" title="Login/Signup"/>
+     <Button  @click="redirectToLogin" class="hidden xl:block" title="Login/Signup"/>
     <button class="xl:hidden" @click="visible = true">
       <i class="pi pi-bars text-[25px]"></i>
     </button>
@@ -45,7 +48,8 @@ const props = defineProps({
         <p>Blog</p>
         <p>Contact</p>
       </div>
-      <Button class="mt-10" title="Login/Signup"/>
+      <Button class="mt-10" @click="redirectToLogin" title="Login/Signup"/>
+
     </Sidebar>
   </nav>
 </template>

@@ -23,14 +23,14 @@ const beg = [
         <div class="text-white text-center font-Inter space-y-5">
             <p class="text-algo-orange text-[16px]">Why Goalgo?</p>
             <h1 class="mx-auto leading-[50px] md:leading-[70px] text-[40px] md:text-[58px] md:w-[90%] xl:text-[64px] xl:w-[60%]">Designed for beginners and <span class="text-algo-orange">experienced traders</span></h1>
-            <p class="font-black text-[#8C8C8C]">Our platform is designed to make trading simple, accessible, and profitable for everyone.</p>
+            <p class="font-light text-[#8C8C8C]">Our platform is designed to make trading simple, accessible, and profitable for everyone.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-16 gap-6">
             <div v-for="item in beg" class="p-6 font-Inter border border-white border-opacity-25 rounded-3xl space-y-6">
                 <img :src="item.img" alt="" class="w-[90%]">
                 <div class="space-y-1">
                     <p class="text-algo-orange text-[19px]">{{ item.title }}</p>
-                <p class="text-[#8C8C8C] font-black text-[16px]">{{ item.desc }}</p>
+                <p class="text-[#8C8C8C] font-light text-[16px]">{{ item.desc }}</p>
                 </div>
             </div>
         </div>

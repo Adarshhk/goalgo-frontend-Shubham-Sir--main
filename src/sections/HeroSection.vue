@@ -15,7 +15,7 @@ import BorderButton from '../components/BorderButton.vue';
       <h1 class="mx-auto text-[50px] md:text-[58px] 2xl:text-[64px] md:w-[65%] xl:w-[42%] leading-[65px]">
         The <span class="text-algo-orange">Future of Trading</span> is Here
       </h1>
-      <p class="font-black text-[#8C8C8C] mx-auto md:w-[70%] xl:w-[70%] 2xl:w-[60%]">
+      <p class="font-light text-[#8C8C8C] mx-auto md:w-[70%] xl:w-[70%] 2xl:w-[60%]">
         Our algorithmic trading software automates complex strategies,
         delivering speed and precision in every trade. Maximize profits, reduce
         risks, and stay ahead of the market with seamless, data-driven
