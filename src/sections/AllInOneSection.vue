@@ -48,7 +48,7 @@ const list = [
             </ul>
         </div>
         <div class="xl:w-[50%]">
-            <img src="../assets/images/AllInOne.png" alt="" class=" md:w-[90%] mx-auto">
+            <img src="/public/images/AllInOne.png" alt="" class=" md:w-[90%] mx-auto">
         </div>
     </section>
 </template>

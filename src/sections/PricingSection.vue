@@ -25,35 +25,35 @@ const redirectToLogin = () => {
                 </div>
                 <div class="space-y-4">
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">20,000+ of PNG & SVG graphics</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Access to 100 million stock images</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Upload custom icons and fonts</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Unlimited Sharing</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Upload graphics & video in up to 4k</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Unlimited Projects</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Instant Access to our design system</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Create teams to collaborate on designs</p>
                     </li>
                
@@ -72,35 +72,35 @@ const redirectToLogin = () => {
                 </div>
                 <div class="space-y-4">
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">20,000+ of PNG & SVG graphics</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Access to 100 million stock images</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Upload custom icons and fonts</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Unlimited Sharing</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Upload graphics & video in up to 4k</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Unlimited Projects</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Instant Access to our design system</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Create teams to collaborate on designs</p>
                     </li>
                
@@ -120,35 +120,35 @@ const redirectToLogin = () => {
                 </div>
                 <div class="space-y-4">
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">20,000+ of PNG & SVG graphics</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Access to 100 million stock images</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Upload custom icons and fonts</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Unlimited Sharing</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Upload graphics & video in up to 4k</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Unlimited Projects</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Instant Access to our design system</p>
                     </li>
                     <li class="flex items-center gap-2">
-                        <img src="../assets/images/svg/right.svg" alt="">
+                        <img src="/public/images/svg/right.svg" alt="">
                         <p class="text-[16px]">Create teams to collaborate on designs</p>
                     </li>
                
