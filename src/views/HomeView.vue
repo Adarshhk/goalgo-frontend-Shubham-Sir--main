@@ -7,18 +7,20 @@ import TestimonialSection from "../sections/TestimonialSection.vue"
 import PricingSection from "../sections/PricingSection.vue"
 import ConnectSection from "../sections/ConnectSection.vue" 
 
+
 </script>
 
 <template>
 
     <main>
-        <HeroSection :showForm = "handleForm" id="hero" />
-        <FeaturesSection1 id="feature1" />
+        <HeroSection id="home" />
+        <FeaturesSection1 id="feature" />
         <BeginnersSection id="beginner" />
         <AllInOneSection id="aio" />
         <TestimonialSection id="testimonal" />
         <PricingSection id="pricing" />
         <ConnectSection id="contact" />
-
+         
+        
     </main>
 </template>

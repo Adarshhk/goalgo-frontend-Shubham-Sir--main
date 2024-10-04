@@ -8,6 +8,7 @@ setInterval(() => {
     currentIndex.value++;
     if (currentIndex.value == 3) currentIndex.value = 0;
   }, 2000);
+
 const testimonals = [
   {
     user: "Amit Yadav",

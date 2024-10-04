@@ -4,19 +4,13 @@ import Footer from "./components/Footer.vue"
 import HomeView from "./views/HomeView.vue"
 import './style.css'
 
-function handleScroll(sectionRef){
-  const section = this.$refs[sectionRef];
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-}
 </script>
 
 <template>
   <main>
-    <Navbar :handleScroll = "handleScroll"/>
+    <Navbar />
     <HomeView/>
-    <Footer ref="contact"/>
+    <Footer/>
   </main>
 </template>
 

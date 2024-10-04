@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { reactive, ref } from 'vue';
 import BorderButton from '../components/BorderButton.vue';
 
 const showForm = ref(false);
@@ -7,21 +7,26 @@ const handleForm = () => {
   showForm.value = !showForm.value;
 }
 
-const name = ref('');
-const email = ref('');
-const mobile = ref('');
-const message = ref('');
-const agreeToTerms = ref(false);
+const form = reactive({
+    name: '',
+    email: '',
+    mobile: '',
+    message: '',
+    agreeToTerms : false,
+})
 
-const handleSubmit = () => {
-  if (agreeToTerms.value) {
-    console.log('Form submitted:', { 
-      name: name.value, 
-      email: email.value, 
-      mobile: mobile.value,
-      message: message.value
-    });
+const handleSubmit = async () => {
+  if (form.agreeToTerms) {
+    console.log(form)
     // Add your form submission logic here
+    const response = await fetch('/contact-us', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',  // This is crucial for sending JSON
+      },
+      body: JSON.stringify(form),  // Convert form data to JSON string
+    });
+    console.log(response)
     showForm.value = false; // Close the modal after submission
   } else {
     alert('Please agree to the Terms and Privacy Policy');
@@ -30,37 +35,39 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <div v-if="showForm" class="transition-all z-20 fixed inset-0 w-full h-screen bg-black bg-opacity-50 flex justify-center items-center">
-    <div class="bg-[#102f2a] rounded-md my-10 max-h-[90vh] overflow-hidden">
-      <div class="w-full max-w-md p-8 rounded-lg shadow-lg bg-opacity-100 opacity-100 relative">
+  <div v-if="showForm"
+    class="transition-all z-20 fixed inset-0 w-full h-screen bg-black bg-opacity-50 flex justify-center items-center overflow-hidden">
+    <div class="bg-[#102f2a] rounded-md my-10">
+      <div class="w-full max-w-md p-8 rounded-lg shadow-lg bg-opacity-100 relative">
         <div class="text-center mb-8">
           <img src="https://i.ibb.co/4WcZ0p0/image.png" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
           <h2 class="text-3xl font-bold text-white mb-2">Contact Us</h2>
           <p class="text-gray-300">Please fill out the form below to get in touch.</p>
         </div>
-        <form @submit.prevent="handleSubmit" class="space-y-6">
+        <form @submit.prevent="handleSubmit" action="/submit" method="POST" class="space-y-6">
           <div>
-            <input v-model="name" type="text" placeholder="Name" required
+            <input v-model="form.name" type="text" placeholder="Name" required
               class="w-full px-4 py-2 rounded bg-dark-green-light text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-500" />
           </div>
           <div>
-            <input v-model="email" type="email" placeholder="Email" required
+            <input v-model="form.email" type="email" placeholder="Email" required
               class="w-full px-4 py-2 rounded bg-dark-green-light text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-500" />
           </div>
           <div>
-            <input v-model="mobile" type="tel" placeholder="Mobile Number" required
+            <input v-model="form.mobile" type="tel" placeholder="Mobile Number" required
               class="w-full px-4 py-2 rounded bg-dark-green-light text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-500" />
           </div>
           <div>
-            <textarea v-model="message" placeholder="Your Message" required rows="4"
+            <textarea v-model="form.message" placeholder="Your Message" required rows="4"
               class="w-full px-4 py-2 rounded bg-dark-green-light text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-500 resize-none"></textarea>
           </div>
           <div class="flex items-center">
-            <input type="checkbox" id="terms" v-model="agreeToTerms" required class="mr-2" />
+            <input type="checkbox" id="terms" v-model="form.agreeToTerms" required class="mr-2" />
             <label for="terms" class="text-gray-300 text-sm">I agree to the Terms and Privacy Policy.</label>
           </div>
           <div class="flex justify-center">
-            <button type="submit" class="px-8 py-2 bg-yellow-500 text-dark-green font-semibold rounded hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-700">
+            <button type="submit"
+              class="px-8 py-2 bg-yellow-500 text-dark-green font-semibold rounded hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-700">
               Submit
             </button>
           </div>
@@ -92,7 +99,7 @@ const handleSubmit = () => {
         risks, and stay ahead of the market with seamless, data-driven
         execution.
       </p>
-      <BorderButton @click="handleForm" title="Request a Demo" class="w-[70%] md:w-[40%] xl:w-[20%]"/>
+      <BorderButton @click="handleForm" title="Request a Demo" class="w-[70%] md:w-[40%] xl:w-[20%]" />
     </div>
     <div class="absolute right-16 top-32 hidden xl:block">
       <img src="../assets/images/svg/heroBg2.svg" alt="" />
@@ -104,10 +111,13 @@ const handleSubmit = () => {
 .bg-dark-green-light {
   background-color: #0f4d31;
 }
+
 .text-dark-green {
   color: #0a3622;
 }
+
 .text-algo-orange {
-  color: #FFA500; /* Adjust this color to match your design */
+  color: #FFA500;
+  /* Adjust this color to match your design */
 }
 </style>

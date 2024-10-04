@@ -5,10 +5,6 @@ import Button from "./Button.vue";
 
 const visible = ref(false);
 
-const props = defineProps({
-  handleScroll : Function,
-})
-
 const redirectToLogin = () => {
   window.location.href = "https://app.way2algo.com/";
 }
@@ -28,9 +24,9 @@ const redirectToLogin = () => {
     <div
       class="font-NeueMontreal-Light hidden xl:flex items-center gap-8 text-[16px] tracking-wider"
     >
-      <a href="#hero" class="font-thin hover:font-semibold cursor-pointer transition-all">Home</a>
+      <a href="#home" class="font-thin hover:font-semibold cursor-pointer transition-all">Home</a>
       <a href="#beginner" class="font-thin hover:font-semibold cursor-pointer transition-all">Why Algo</a>
-      <a href="#feature1" class="font-thin hover:font-semibold cursor-pointer transition-all">Features</a>
+      <a href="#feature" class="font-thin hover:font-semibold cursor-pointer transition-all">Features</a>
       <a href="#pricing" class="font-thin hover:font-semibold cursor-pointer transition-all">Pricing</a>
       <a href="#testimonal" class="font-thin hover:font-semibold cursor-pointer transition-all">Testimonials</a>
      
