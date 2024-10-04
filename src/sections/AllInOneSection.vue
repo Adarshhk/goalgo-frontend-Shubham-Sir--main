@@ -29,7 +29,7 @@ const list = [
         <div class="w-full xl:w-[50%] font-Inter space-y-14">
             <div class="space-y-6">
                 <h1 class=" text-[40px] leading-[50px] md:leading-[70px] md:text-[52px] 2xl:text-[64px]">All-in-one decentralized <span class="text-algo-orange">Algo Trading Platform</span></h1>
-                <p class="font-normal text-[#8C8C8C] text-[16px] w-[520px]">At <span class="text-algo-orange font-normal">way2algo</span>, we offer a range of features to help you make the most of your trading experience. Here are just a few of the features we offer:</p>
+                <p class="font-normal text-[#8C8C8C] text-[16px] md:w-[520px] w-full lg:w-[520px] ">At <span class="text-algo-orange font-normal">way2algo</span>, we offer a range of features to help you make the most of your trading experience. Here are just a few of the features we offer:</p>
             </div>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 2xl:gap-12">
                 <li v-for="item in list" class="font-Inter flex items-start gap-2 ">
