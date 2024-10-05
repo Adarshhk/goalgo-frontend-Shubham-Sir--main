@@ -38,7 +38,7 @@ onMounted(() => observer.observe(section.value));
             <p class="font-light text-[#8C8C8C]">Our platform is designed to make trading simple, accessible, and profitable for everyone.</p>
         </div>
         <div ref="section" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-16 gap-6">
-            <div  v-for="item in beg" :class="{'translate-y-16 lg:opacity-0 md:opacity-0' : !show , 'translate-y-0 opacity-100' : show}" class="shadow-md p-6 font-Inter border border-white border-opacity-25 rounded-3xl space-y-6 transition-all dur">
+            <div  v-for="item in beg" :class="{'translate-y-16 lg:opacity-0 md:opacity-0' : !show , 'translate-y-0 opacity-100' : show}" class="shadow-md p-6 font-Inter border border-white border-opacity-25 rounded-3xl space-y-6 transition-all duration-500">
                 <img :src="item.img" alt="" class="w-[90%]">
                 <div class="space-y-1">
                     <p class="text-algo-orange text-[19px]">{{ item.title }}</p>
