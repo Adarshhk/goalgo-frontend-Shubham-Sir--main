@@ -28,7 +28,7 @@ onMounted(() => observer.observe(section.value));
             <p class="text-[#8C8C8C] mx-auto w-[90%] xl:w-[70%]  font-light text-[16px]">Our pricing plans are designed to suit traders of all levels, offering flexible options without hidden fees. Get access to premium features and expert tools that help you maximize your returns while minimizing costs.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 lg:overflow-y-hidden md:overflow-y-hidden 2xl:px-20 md:gap-[425px] lg:gap-[300px] xl:gap-6 sm:overflow-x-auto space-y-8 md:space-y-0 py-10">
-            <div :class="{'translate-y-16 lg:opacity-0 md:opacity-0' : !show , 'translate-y-0 opacity-100' : show}" class="lg:hover:scale-105 md:hover:scale-105 transform transition-all hover:duration-300 duration-200 hover:shadow-lg p-6 space-y-4 bg-white bg-opacity-5 rounded-xl border border-white border-opacity-20 md:min-w-[400px] xl:min-w-0"> 
+            <div :class="{'translate-y-16 lg:opacity-0 md:opacity-0' : !show , 'translate-y-0 opacity-100' : show}" class="lg:hover:scale-105 md:hover:scale-105 transform transition-all hover:duration-300 lg:duration-200 md:duration-200 duration-500 hover:shadow-lg p-6 space-y-4 bg-white bg-opacity-5 rounded-xl border border-white border-opacity-20 md:min-w-[400px] xl:min-w-0"> 
                 <div class="space-y-1" ref="section">
                     <h3 class="font-bold text-[22px]">Freebie</h3>
                     <p class="font-light text-[16px]">Ideal for individuals who need quick access to basic features.</p>

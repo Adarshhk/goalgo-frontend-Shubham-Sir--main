@@ -5,9 +5,9 @@ import { ref } from 'vue';
 const currentIndex = ref(0);
 
 setInterval(() => {
-    currentIndex.value++;
-    if (currentIndex.value == 3) currentIndex.value = 0;
-  }, 2000);
+  currentIndex.value++;
+  if (currentIndex.value == 3) currentIndex.value = 0;
+}, 2000);
 
 const testimonals = [
   {
@@ -42,11 +42,13 @@ const testimonals = [
           questions or issues you may have.
         </p>
       </div>
-      <div class="xl:w-[45%] w-full   flex flex-row justify-evenly overflow-hidden relative" >
+
+      <div class="xl:w-[45%] w-full flex flex-row justify-around overflow-hidden relative">
         <div :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
-          class="transition-transform duration-500 min-w-full font-Inter" v-for='(testimonial, index) in testimonals'
-          :key='index'>
-          <div class='lg:p-8 md:p-8 p-3 rounded-2xl bg-white bg-opacity-10 border border-white border-opacity-25 space-y-5'>
+          class="transition-transform duration-500 flex w-full">
+          <div
+            class="w-full px-2 lg:p-8 md:p-8 p-3 rounded-2xl bg-white bg-opacity-10 border border-white border-opacity-25 space-y-5 flex-shrink-0"
+            v-for='(testimonial, index) in testimonals' :key='index'>
             <div class="flex items-start gap-4">
               <img src="/images/svg/dummy.svg" alt="" />
 
@@ -61,7 +63,6 @@ const testimonals = [
             </p>
           </div>
         </div>
-
       </div>
 
     </div>
