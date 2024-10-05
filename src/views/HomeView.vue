@@ -6,8 +6,6 @@ import AllInOneSection from "../sections/AllInOneSection.vue"
 import TestimonialSection from "../sections/TestimonialSection.vue"
 import PricingSection from "../sections/PricingSection.vue"
 import ConnectSection from "../sections/ConnectSection.vue" 
-import Testform from "./testform.vue"
-
 
 </script>
 
@@ -21,7 +19,6 @@ import Testform from "./testform.vue"
         <TestimonialSection id="testimonal" />
         <PricingSection id="pricing" />
         <ConnectSection id="contact" />
-         
-            <!-- <Testform/> -->
+
     </main>
 </template>
