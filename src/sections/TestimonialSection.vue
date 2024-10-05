@@ -48,7 +48,7 @@ const testimonals = [
           :key='index'>
           <div class='lg:p-8 md:p-8 p-3 rounded-2xl bg-white bg-opacity-10 border border-white border-opacity-25 space-y-5'>
             <div class="flex items-start gap-4">
-              <img src="/public/images/svg/dummy.svg" alt="" />
+              <img src="/images/svg/dummy.svg" alt="" />
 
               <div class="">
                 <p class="font-[19px]">{{ testimonial.user }}</p>

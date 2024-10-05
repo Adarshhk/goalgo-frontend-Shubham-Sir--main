@@ -83,10 +83,10 @@ const handleSubmit = async () => {
 
   <section class="px-6 md:px-10 py-20 xl:py-44 relative 3xl:max-w-[85%] mx-auto">
     <div class="absolute left-16 top-32 hidden xl:block">
-      <img src="/public/images/svg/heroBg1.svg" alt="" />
+      <img src="/images/svg/heroBg1.svg" alt="" />
     </div>
     <div class="absolute top-10 left-[620px] 2xl:left-[720px] hidden xl:block">
-      <img src="/public/images/svg/heroBg3.svg" alt="" />
+      <img src="/images/svg/heroBg3.svg" alt="" />
     </div>
 
     <div class="text-white font-Inter text-center space-y-6">
@@ -102,7 +102,7 @@ const handleSubmit = async () => {
       <BorderButton @click="handleForm" title="Request a Demo" class="w-[70%] md:w-[40%] xl:w-[20%]" />
     </div>
     <div class="absolute right-16 top-32 hidden xl:block">
-      <img src="/public/images/svg/heroBg2.svg" alt="" />
+      <img src="/images/svg/heroBg2.svg" alt="" />
     </div>
   </section>
 </template>
