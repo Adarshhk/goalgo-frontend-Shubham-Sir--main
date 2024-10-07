@@ -48,34 +48,3 @@ const features = [
   </div>
 </template>
 
-<template>
-    <div class="inline-flex items-center bg-white rounded-full p-1 text-sm font-medium relative">
-      <button
-        @click="togglePlan"
-        class="px-4 py-2 rounded-full transition-colors duration-200 z-10 relative"
-        :class="isYearly ? 'text-white' : 'text-gray-900'"
-      >
-        Yearly
-        <span class="ml-1 text-green-500 text-xs font-normal" :class="{ 'opacity-0': !isYearly }">Save 25%</span>
-      </button>
-      <button
-        @click="togglePlan"
-        class="px-4 py-2 rounded-full transition-colors duration-200 z-10 relative"
-        :class="!isYearly ? 'text-white' : 'text-gray-900'"
-      >
-        Monthly
-      </button>
-      <div
-        class="absolute top-1 bottom-1 rounded-full bg-gray-900 transition-all duration-300 ease-in-out"
-        :class="[
-          isYearly ? 'left-1 right-[calc(50%+0.25rem)]' : 'left-[calc(50%-0.25rem)] right-1',
-          isAnimating ? 'scale-x-110' : 'scale-x-100'
-        ]"
-      ></div>
-    </div>
-  </template>
-  
-
-  
- 
-  
