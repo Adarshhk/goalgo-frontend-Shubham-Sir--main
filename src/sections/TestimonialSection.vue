@@ -12,15 +12,18 @@ setInterval(() => {
 const testimonals = [
   {
     user: "Amit Yadav",
-    message: "This platform's precision and speed have transformed my trading. I never miss an opportunity!"
+    message: "This platform's precision and speed have transformed my trading. I never miss an opportunity!",
+    img: "/pp1.jpg"
   },
   {
     user: "Yuvraj Sinha",
-    message: "Real-time insights and customizable strategies have helped me optimize my trades like never before."
+    message: "Real-time insights and customizable strategies have helped me optimize my trades like never before.",
+    img: "/pp2.jpg"
   },
   {
     user: "Snehil Das",
-    message: "Consistent results, free of emotional bias-this automation has taken my trading to the next level."
+    message: "Consistent results, free of emotional bias-this automation has taken my trading to the next level.",
+    img: "/images/svg/dummy.svg"
   },
 
 ]
@@ -50,7 +53,7 @@ const testimonals = [
             class="w-full px-2 lg:p-8 md:p-8 p-3 rounded-2xl bg-white bg-opacity-10 border border-white border-opacity-25 space-y-5 flex-shrink-0"
             v-for='(testimonial, index) in testimonals' :key='index'>
             <div class="flex items-start gap-4">
-              <img src="/images/svg/dummy.svg" alt="" />
+              <img class="rounded-full size-14 object-cover" :src='testimonial.img' alt="" />
 
               <div class="">
                 <p class="font-[19px]">{{ testimonial.user }}</p>

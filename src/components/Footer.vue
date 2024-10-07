@@ -1,7 +1,10 @@
 <script setup>
+import { RouterLink, useRouter } from 'vue-router';
 
-const redirectToLogin = () => {
-  window.location.href = "https://app.way2algo.com/";
+const router = useRouter();
+
+const navigateToAbout = (section) => {
+  router.push({path : `/about` , hash : `${section}`});
 }
 </script>
 
@@ -13,27 +16,24 @@ const redirectToLogin = () => {
         <a href="/">
           <img src="/images/Logo.png" alt="" class="w-[80%]" />
         </a>
-        <p class="font-light text-gray-400">
-          Keep all your health records in one secure place for easy access to
-          your medical history during doctor visits.
-        </p>
+        
       </div>
       <div class="text-[16px] space-y-4 justify-self-start md:justify-self-center mt-8 md:mt-0">
         <p>Quick Link</p>
         <div class="text-[#89A3B2] space-y-2">
-          <a href="https://app.way2algo.com/register" target="_blank" class="hover:underline">Register Now</a>
-          <p>Features</p>
-          <p>Services</p>
-          <p>Why US</p>
+          <p><a href="https://app.way2algo.com/register" target="_blank" class="hover:underline">Register Now</a></p>
+          <p><RouterLink :to="{ path: '/', hash: '#feature' }" class="hover:underline cursor-pointer">Features</RouterLink></p>
+          <p><RouterLink :to="{ path: '/', hash: '#pricing' }" class="hover:underline cursor-pointer">Pricing</RouterLink></p>
+          <p><RouterLink :to="{ path: '/', hash: '#beginner' }" class="hover:underline cursor-pointer">Why Us</RouterLink></p>
+          
         </div>
       </div>
       <div class="text-[16px] space-y-4 justify-self-start md:justify-self-center mt-8 md:mt-0">
         <p>Legal</p>
         <div class="text-[#89A3B2] space-y-2">
-          <p>Disclaimer</p>
-          <p>Non-Discrimination</p>
-          <p>HIPAA & Privacy Policy</p>
-          <p>Equal Opportunity</p>
+          <p><RouterLink :to="{ path: '/about', hash: '#disclaimer' }" class="hover:underline cursor-pointer">Disclaimer</RouterLink></p> 
+          <p><RouterLink :to="{ path: '/about', hash: '#privacy' }" class="hover:underline cursor-pointer">Privacy Policy</RouterLink></p> 
+          <p><RouterLink :to="{ path: '/about'  }" class="hover:underline cursor-pointer">Terms & Conditions</RouterLink></p>
         </div>
       </div>
       <div class="text-[16px] space-y-4 justify-self-start xl:justify-self-center mt-8 xl:mt-0">

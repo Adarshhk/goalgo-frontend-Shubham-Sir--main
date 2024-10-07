@@ -7,14 +7,14 @@ const beg = [
         "img": "/beg1.png"
     },
     {
-        "title": "Educational Community",
-        "desc": "We offer a range of educational resources to help you learn more about trading.",
-        "img": "/beg2.png"
+        "title": "24/7 Support",
+        "desc": "Get round-the-clock assistance from our expert team for any queries.",
+        "img": "/beg2.webp"
     },
     {
-        "title": "Market Analysis Tool",
-        "desc": "Our platform provides up-to-date news and analysis on the crypto markets.",
-        "img": "/beg3.png"
+        "title": "Effortless Trading, Anytime",
+        "desc": "Get real-time notifications for every trade you perform.",
+        "img": "/beg3.webp"
     },
 ]
 
@@ -42,7 +42,7 @@ onMounted(() => observer.observe(section.value));
                 <img :src="item.img" alt="" class="w-[90%]">
                 <div class="space-y-1">
                     <p class="text-algo-orange text-[19px]">{{ item.title }}</p>
-                <p class="text-[#8C8C8C] font-light text-[16px]">{{ item.desc }}</p>
+                <p class="text-[#8C8C8C] font-light text-[18px]">{{ item.desc }}</p>
                 </div>
             </div>
         </div>

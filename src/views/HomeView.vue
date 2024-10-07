@@ -6,12 +6,14 @@ import AllInOneSection from "../sections/AllInOneSection.vue"
 import TestimonialSection from "../sections/TestimonialSection.vue"
 import PricingSection from "../sections/PricingSection.vue"
 import ConnectSection from "../sections/ConnectSection.vue" 
+import Navbar from "../components/Navbar.vue"
 
 </script>
 
 <template>
 
     <main>
+        <Navbar/>
         <HeroSection id="home" />
         <FeaturesSection1 id="feature" />
         <BeginnersSection id="beginner" />

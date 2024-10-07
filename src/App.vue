@@ -3,13 +3,13 @@ import Navbar from "./components/Navbar.vue"
 import Footer from "./components/Footer.vue"
 import HomeView from "./views/HomeView.vue"
 import './style.css'
+import { RouterView } from "vue-router";
 
 </script>
 
 <template>
   <main>
-    <Navbar />
-    <HomeView/>
+    <RouterView/>
     <Footer/>
   </main>
 </template>
