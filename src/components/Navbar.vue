@@ -28,7 +28,9 @@ const redirectToLogin = () => {
       <a href="#beginner" class="font-thin hover:font-semibold cursor-pointer transition-all">Why Algo</a>
       <a href="#feature" class="font-thin hover:font-semibold cursor-pointer transition-all">Features</a>
       <a href="#pricing" class="font-thin hover:font-semibold cursor-pointer transition-all">Pricing</a>
-      <a href="#testimonal" class="font-thin hover:font-semibold cursor-pointer transition-all">Testimonials</a>
+      <a href="#who" class="font-thin hover:font-semibold cursor-pointer transition-all">About Us</a>
+      <a href="#why" class="font-thin hover:font-semibold cursor-pointer transition-all">Why Us</a>
+      
      
     </div>
      <Button  @click="redirectToLogin" class="hidden xl:block" title="Login/Signup"/>
@@ -41,7 +43,8 @@ const redirectToLogin = () => {
       <a href="#beginner" class="font-thin hover:font-semibold cursor-pointer transition-all">Why Algo</a>
       <a href="#feature" class="font-thin hover:font-semibold cursor-pointer transition-all">Features</a>
       <a href="#pricing" class="font-thin hover:font-semibold cursor-pointer transition-all">Pricing</a>
-      <a href="#testimonal" class="font-thin hover:font-semibold cursor-pointer transition-all">Testimonials</a>
+      <a href="#who" class="font-thin hover:font-semibold cursor-pointer transition-all">About Us</a>
+      <a href="#why" class="font-thin hover:font-semibold cursor-pointer transition-all">Why Us</a>
       </div>
       <Button class="mt-10" @click="redirectToLogin" title="Login/Signup"/>
 
