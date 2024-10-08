@@ -12,7 +12,7 @@ const redirectToLogin = () => {
 </script>
 
 <template>
-  <nav class="text-white px-6 md:px-10 py-4 flex items-center justify-between 3xl:max-w-[85%] mx-auto sticky top-0 z-20 bg-[#102F2A] drop-shadow-md">
+  <nav class="text-white px-6 md:px-10 py-4 flex items-center justify-between mx-auto sticky top-0 z-20 bg-[#102F2A] drop-shadow-md">
    <a href="/" class="w-[45%] md:w-[25%] xl:w-[12%]">
     <img
       src="/images/Logo.png"

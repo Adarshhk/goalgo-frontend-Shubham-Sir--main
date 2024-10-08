@@ -1,6 +1,6 @@
 <template>
     <div class="terms-conditions p-6">
-      <h1 className="text-5xl font-bold mb-6">
+      <h1 className="mt-10 text-5xl font-bold mb-6">
           <span className="text-white">Terms and </span>
           <span className="text-[#ffa500]">Conditions</span>
         </h1>

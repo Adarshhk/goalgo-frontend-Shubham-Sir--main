@@ -21,7 +21,7 @@ const cards = [
 </script>
 
 <template>
-  <div class="text-white min-h-screen">
+  <div class="text-white">
     <div class="w-[80%] mx-auto text-center ">
       <h1 class="mt-10 text-6xl font-Inter mb-4">Who <span class="text-algo-orange">we are</span></h1>
       <p class="text-[#8C8C8C] mt-10 mb-16 w-3/4 mx-auto">
