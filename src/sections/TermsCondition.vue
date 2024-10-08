@@ -1,5 +1,9 @@
 <template>
     <div class="terms-conditions p-6">
+      <h1 className="text-5xl font-bold mb-6">
+          <span className="text-white">Terms and </span>
+          <span className="text-[#ffa500]">Conditions</span>
+        </h1>
       
       <p class="italic mb-4 text-[#ffa500]">Last Updated: 21/09/2024</p>
   
