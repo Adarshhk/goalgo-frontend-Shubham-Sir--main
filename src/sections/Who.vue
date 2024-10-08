@@ -1,4 +1,6 @@
 <script setup>
+import { onMounted, ref } from 'vue';
+
 
 
 const cards = [
@@ -18,6 +20,17 @@ const cards = [
     description: 'To be a global leader in algorithmic trading technology, driving innovation and delivering exceptional trading performance for traders at all levels.',
   },
 ]
+
+const section = ref(null);
+const show = ref(false);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    show.value = entry.isIntersecting;
+    
+  });
+});
+
+onMounted(() => observer.observe(section.value));
 </script>
 
 <template>
@@ -28,11 +41,12 @@ const cards = [
         Way2Algo delivers advanced algorithmic trading software that automates strategies with speed and accuracy,
         empowering traders to achieve better results effortlessly.
       </p>
-      <div class="lg:flex-nowrap md:flex-nowrap xl:flex-nowrap flex justify-evenly gap-16 sm:gap-6 flex-wrap overflow-auto">
-        <div
+      <div ref="section" class="lg:flex-nowrap md:flex-nowrap xl:flex-nowrap flex justify-evenly gap-16 sm:gap-6 flex-wrap overflow-auto overflow-y-hidden">
+        <div 
+        :class="{'translate-y-16 lg:opacity-0 md:opacity-0' : !show , 'translate-y-0 opacity-100' : show}" 
           v-for="(card, index) in cards"
           :key="index"
-          class="border w-full min-w-72 border-[#8C8C8C] rounded-3xl p-4 py-10 flex flex-col items-center text-center "
+          class="border w-full min-w-72 border-[#8C8C8C] rounded-3xl p-4 py-10 flex flex-col items-center text-center transition-all duration-300 "
         >
           <img :src="card.img" alt="" class="mt-6"/>
           <h2 class="mt-10 text-xl font-Inter mb-2 text-algo-orange">{{ card.title }}</h2>

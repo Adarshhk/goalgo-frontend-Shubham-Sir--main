@@ -20,7 +20,7 @@ const features = [
 </script>
 
 <template>
-  <div class="container mx-auto py-5 md:py-24 w-[90%] xs:mt-10 sm:mt-10">
+  <div class="container mt-5 mx-auto py-5 md:py-24 w-[90%] xs:mt-10 sm:mt-10">
     <div class="flex flex-col lg:flex-row justify-between items-center">
       <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">

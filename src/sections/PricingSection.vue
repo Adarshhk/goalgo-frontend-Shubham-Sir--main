@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import Button from '../components/Button.vue';
 import BorderButton from '../components/BorderButton.vue';
 
@@ -81,7 +81,16 @@ const togglePlan = () => {
   }, 150)
 }
 
-defineExpose({ isMonthly })
+const section = ref(null);
+const show = ref(false);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    show.value = entry.isIntersecting;
+    
+  });
+});
+
+onMounted(() => observer.observe(section.value));
 </script>
 
 <template>
@@ -114,9 +123,9 @@ defineExpose({ isMonthly })
     </div>
 
     <div class="py-10 mt-10 sm:mt-12 overflow-x-auto md:overflow-x-auto">
-      <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-max mx-auto pb-4 sm:pb-0">
-        <div v-for="(plan, index) in (isMonthly ? pricingPlans.monthly : pricingPlans.quarterly)" :key="index"
-          class="flex flex-col flex-shrink-0 w-full sm:mx-6 sm:w-[300px] md:w-[350px] p-6 sm:p-8 lg:hover:scale-105 md:hover:scale-105 transform transition-all hover:duration-300 duration-500 hover:shadow-lg bg-white bg-opacity-5 rounded-xl border border-white border-opacity-20">
+      <div ref="section" class="flex overflow-y-hidden flex-col sm:flex-row gap-6 w-full sm:w-max mx-auto pt-4 sm:pb-4">
+        <div :class="{'translate-y-16 lg:opacity-0 md:opacity-0' : !show , 'translate-y-0 opacity-100' : show}" v-for="(plan, index) in (isMonthly ? pricingPlans.monthly : pricingPlans.quarterly)" :key="index"
+          class="flex text-center flex-col flex-shrink-0 w-full sm:mx-6 sm:w-[300px] md:w-[350px] p-6 sm:p-8 lg:hover:scale-105 md:hover:scale-105 transform transition-all hover:duration-300 duration-500 hover:shadow-lg bg-white bg-opacity-5 rounded-xl border border-white border-opacity-20">
           <div class="space-y-1 mb-4">
             <h3 class="font-Inter text-xl sm:text-2xl">{{ plan.name }}</h3>
             <p class="font-light text-sm sm:text-base">{{ plan.strategy }}</p>
@@ -126,9 +135,9 @@ defineExpose({ isMonthly })
               <p class="font-semibold text-3xl sm:text-4xl md:text-[56px]">₹{{ plan.price }}</p>
               <p class="font-light text-xs sm:text-sm">/ {{ isMonthly ? 'Month' : '3 Months' }}</p>
             </div>
-            <div class="space-y-4 mb-4">
+            <div class="text-center space-y-4 mb-4">
               <li v-for="(feature, featureIndex) in [plan.capital, plan.segment, plan.multiplier, plan.support]"
-                :key="featureIndex" class="flex items-center gap-2">
+                :key="featureIndex" class="flex justify-center items-center gap-2">
                 <img src="/images/svg/right.svg" alt="" class="w-4 h-4">
                 <p class="text-sm sm:text-base">{{ feature }}</p>
               </li>
