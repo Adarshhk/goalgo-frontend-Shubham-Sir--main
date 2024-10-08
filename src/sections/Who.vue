@@ -28,7 +28,7 @@ const cards = [
         Way2Algo delivers advanced algorithmic trading software that automates strategies with speed and accuracy,
         empowering traders to achieve better results effortlessly.
       </p>
-      <div class="flex justify-evenly gap-16 overflow-auto">
+      <div class="lg:flex-nowrap md:flex-nowrap xl:flex-nowrap flex justify-evenly gap-16 sm:gap-6 flex-wrap overflow-auto">
         <div
           v-for="(card, index) in cards"
           :key="index"

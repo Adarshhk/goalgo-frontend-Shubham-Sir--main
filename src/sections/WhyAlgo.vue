@@ -20,7 +20,7 @@ const features = [
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-5 md:py-24 w-[90%] xs:mt-10 sm:mt-10">
+  <div class="container mx-auto py-5 md:py-24 w-[90%] xs:mt-10 sm:mt-10">
     <div class="flex flex-col lg:flex-row justify-between items-center">
       <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">
@@ -32,7 +32,7 @@ const features = [
         <ul class="space-y-12">
           <li v-for="(feature, index) in features" :key="index" class="flex items-start">
             <img :src="feature.icon" :alt="feature.title" class="w-12 h-12 flex-shrink-0">
-            <div class="ml-5 mr-20">
+            <div class="ml-5 xl:mr-20 lg:mr-20 md:mr-20">
               <p class="text-white font-sans text-xl mb-2">{{ feature.title }}</p>
               <p class="text-sm md:text-base font-sans text-[#8C8C8C] max-w-xl">
                 {{ feature.description }}
