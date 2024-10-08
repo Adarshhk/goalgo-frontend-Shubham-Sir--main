@@ -3,7 +3,6 @@ import { ref } from 'vue';
 import Button from '../components/Button.vue';
 import BorderButton from '../components/BorderButton.vue';
 
-
 const pricingPlans = {
   monthly: [
     {
@@ -86,59 +85,60 @@ defineExpose({ isMonthly })
 </script>
 
 <template>
-
-  <section class="px-6 md:px-10 py-20 font-Inter 3xl:max-w-[85%] mx-auto">
-
+  <section class="px-4 sm:px-6 md:px-10 py-12 sm:py-20 font-Inter 3xl:max-w-[85%] mx-auto">
     <div class="text-center">
-      <h1 class="text-[58px] xl:text-[64px]">Our <span class="text-algo-orange">Pricing</span></h1>
-      <p class="text-[#8C8C8C] mx-auto w-[90%] xl:w-[70%] font-light text-[16px]">Our pricing plans are designed to suit
+      <h1 class="text-4xl sm:text-5xl xl:text-[64px] mb-4">Our <span class="text-algo-orange">Pricing</span></h1>
+      <p class="text-[#8C8C8C] mx-auto w-full sm:w-[90%] xl:w-[70%] font-light text-sm sm:text-base">Our pricing plans are designed to suit
         traders of all levels, offering flexible options without hidden fees. Get access to premium features and expert
         tools that help you maximize your returns while minimizing costs.</p>
     </div>
-  <div class="flex justify-center">
-    <div
-      class="inline-flex mt-10 justify-evenly items-center border-[#8C8C8C] border-2 rounded-full p-1 text-sm font-medium relative">
-      <button @click="togglePlan" class="px-4 py-2 rounded-full transition-colors duration-200 z-10 relative"
-        :class="isMonthly ? 'text-black' : 'text-[#8C8C8C]'">
-        Monthly
 
-      </button>
-      <button @click="togglePlan" class="px-4 py-2 rounded-full transition-colors duration-200 z-10 relative"
-        :class="!isMonthly ? 'text-black' : 'text-[#8C8C8C]'">
-        Quaterly
-      </button>
-
-
+    <div class="flex justify-center mt-8 sm:mt-10">
       <div
-        class="absolute inset-[4px] w-[calc(50%-4px)] rounded-full bg-algo-orange transition-all duration-300 ease-in-out"
-        :class="[
-          isMonthly ? 'left-1 right-[calc(50%+0.25rem)]' : 'left-[calc(50%-0.25rem)] right-1',
-          isAnimating ? 'scale-x-110' : 'scale-x-100'
-        ]"></div>
+        class="inline-flex justify-evenly items-center border-[#8C8C8C] border-2 rounded-full p-1 text-xs sm:text-sm font-medium relative">
+        <button @click="togglePlan" class="px-3 sm:px-4 py-2 rounded-full transition-colors duration-200 z-10 relative"
+          :class="isMonthly ? 'text-black' : 'text-[#8C8C8C]'">
+          Monthly
+        </button>
+        <button @click="togglePlan" class="px-3 sm:px-4 py-2 rounded-full transition-colors duration-200 z-10 relative"
+          :class="!isMonthly ? 'text-black' : 'text-[#8C8C8C]'">
+          Quarterly
+        </button>
+        <div
+          class="absolute inset-[4px] w-[calc(50%-4px)] rounded-full bg-algo-orange transition-all duration-300 ease-in-out"
+          :class="[
+            isMonthly ? 'left-1 right-[calc(50%+0.25rem)]' : 'left-[calc(50%-0.25rem)] right-1',
+            isAnimating ? 'scale-x-110' : 'scale-x-100'
+          ]"></div>
+      </div>
     </div>
-  </div>
 
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-10 w-[80%] xs:w-full mx-auto">
-      <div v-for="(plan, index) in (isMonthly ? pricingPlans.monthly : pricingPlans.quarterly)" :key="index"
-        class="p-10 lg:hover:scale-105 md:hover:scale-105 transform transition-all hover:duration-300 duration-500 hover:shadow-lg space-y-4 bg-white bg-opacity-5 rounded-xl border border-white border-opacity-20">
-        <div class="space-y-1">
-          <h3 class="font-Inter text-[22px]">{{ plan.name }}</h3>
-          <p class="font-light text-[16px]">{{ plan.strategy }}</p>
-        </div>
-        <div class="space-y-2">
-          <p class="font-semibold text-[56px]">₹{{ plan.price }} <span class="font-light text-[16px]">/ {{ isMonthly ?
-            'Month' : '3 Months' }}</span></p>
-          <Button v-if="plan.multiplier == '5x Multiplier'" @click="redirectToLogin" :title="'Get Started Now'"
-            class="rounded-sm w-full" />
-          <BorderButton v-else @click="redirectToLogin" :title="'Get Started Now'" class="rounded-sm w-full" />
-        </div>
-        <div class="space-y-4">
-          <li v-for="(feature, featureIndex) in [plan.capital, plan.segment, plan.multiplier, plan.support]"
-            :key="featureIndex" class="flex items-center gap-2">
-            <img src="/images/svg/right.svg" alt="">
-            <p class="my-2 text-[16px]">{{ feature }}</p>
-          </li>
+    <div class="py-10 mt-10 sm:mt-12 overflow-x-auto md:overflow-x-auto">
+      <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-max mx-auto pb-4 sm:pb-0">
+        <div v-for="(plan, index) in (isMonthly ? pricingPlans.monthly : pricingPlans.quarterly)" :key="index"
+          class="flex flex-col flex-shrink-0 w-full sm:mx-6 sm:w-[300px] md:w-[350px] p-6 sm:p-8 lg:hover:scale-105 md:hover:scale-105 transform transition-all hover:duration-300 duration-500 hover:shadow-lg bg-white bg-opacity-5 rounded-xl border border-white border-opacity-20">
+          <div class="space-y-1 mb-4">
+            <h3 class="font-Inter text-xl sm:text-2xl">{{ plan.name }}</h3>
+            <p class="font-light text-sm sm:text-base">{{ plan.strategy }}</p>
+          </div>
+          <div class="flex-grow flex flex-col justify-between">
+            <div class="space-y-2 mb-4">
+              <p class="font-semibold text-3xl sm:text-4xl md:text-[56px]">₹{{ plan.price }}</p>
+              <p class="font-light text-xs sm:text-sm">/ {{ isMonthly ? 'Month' : '3 Months' }}</p>
+            </div>
+            <div class="space-y-4 mb-4">
+              <li v-for="(feature, featureIndex) in [plan.capital, plan.segment, plan.multiplier, plan.support]"
+                :key="featureIndex" class="flex items-center gap-2">
+                <img src="/images/svg/right.svg" alt="" class="w-4 h-4">
+                <p class="text-sm sm:text-base">{{ feature }}</p>
+              </li>
+            </div>
+            <div>
+              <Button v-if="plan.multiplier == '5x Multiplier'" @click="redirectToLogin" :title="'Get Started Now'"
+                class="rounded-sm w-full text-sm" />
+              <BorderButton v-else @click="redirectToLogin" :title="'Get Started Now'" class="rounded-sm w-full text-sm" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -146,7 +146,25 @@ defineExpose({ isMonthly })
 </template>
 
 <style scoped>
-/* Add any additional component-specific styles here */
+@media (max-width: 1023px) {
+  .overflow-x-auto {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .overflow-x-auto::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .sm\:w-max {
+    width: max-content;
+  }
+}
+
 .scale-x-110 {
   transform: scaleX(1.1);
 }

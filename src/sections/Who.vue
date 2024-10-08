@@ -28,11 +28,11 @@ const cards = [
         Way2Algo delivers advanced algorithmic trading software that automates strategies with speed and accuracy,
         empowering traders to achieve better results effortlessly.
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 rounded-lg">
+      <div class="flex justify-evenly gap-16 overflow-auto">
         <div
           v-for="(card, index) in cards"
           :key="index"
-          class="border w-full border-[#8C8C8C] rounded-3xl p-4 py-10 flex flex-col items-center text-center "
+          class="border w-full min-w-72 border-[#8C8C8C] rounded-3xl p-4 py-10 flex flex-col items-center text-center "
         >
           <img :src="card.img" alt="" class="mt-6"/>
           <h2 class="mt-10 text-xl font-Inter mb-2 text-algo-orange">{{ card.title }}</h2>
