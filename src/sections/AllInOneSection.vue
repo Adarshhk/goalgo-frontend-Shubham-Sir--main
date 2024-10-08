@@ -20,6 +20,10 @@ const list = [
         "title": "Consistent Results",
         "desc": "Steady, emotion-free trading results."
     },
+    {
+        "title" : "Dashboard",
+        "desc" : "You will have complete control over your trading account and will be able to modify it"
+    }
     
 ]
 </script>
@@ -39,7 +43,7 @@ const list = [
                     
                     <div class="ml-4">
                         <p class="font-normal text-[19px]">{{ item.title }}</p>
-                        <div class="flex flex-wrap w-[230px]">
+                        <div class="flex flex-wrap w-[280px]">
                             <p class="text-[#8C8C8C] text-[17px] font-medium">{{ item.desc }}</p>
                         </div>
                         
