@@ -39,13 +39,13 @@ const navigateToAbout = (section) => {
       <div class="text-[16px] space-y-4 justify-self-start xl:justify-self-center mt-8 xl:mt-0">
         <p>Follow Us On</p>
         <div class=" flex gap-4">
-          <a target="_blank" href="">
-            <i class="pi pi-linkedin text-[30px]"></i>
-          </a>
-          <a target="_blank" href=""><i
+          <a target="_blank" href="https://web.whatsapp.com/send?phone=919500829262&text="><i
+            class="pi pi-whatsapp text-[30px]"></i></a>
+          <a target="_blank" href="https://www.instagram.com/way2algotrade/"><i
             class="pi pi-instagram text-[30px]"></i></a>
-          <a target="_blank" href=""><i
-              class="pi pi-facebook text-[30px]"></i></a>
+          <a target="_blank" href="https://www.youtube.com/@WAY2ALGO"><i
+              class="pi pi-youtube text-[30px]"></i></a>
+              
         </div>
       </div>
     </div>
