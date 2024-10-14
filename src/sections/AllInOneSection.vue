@@ -57,9 +57,9 @@ function handleClick() {
             </ul>
         </div>
         
-        <div class="xl:w-[50%] relative" @click="handleClick">
+        <div class="xl:w-[50%] relative">
             <div class="cursor-pointer absolute 2xl:top-[170px] 2xl:left-[160px] 3xl:top-[200px] 3xl:left-[200px] xl:top-[160px] xl:left-[140px] lg:top-[140px] lg:left-[140px] md:left-[200px] md:top-[200px] sm:left-[120px] sm:top-[160px] xs:top-[90px] xs:left-[70px] sm:size-24 md:size-24 lg:size-28 xl:size-28 2xl:size-28 3xl:size-30 xs:size-20 lm:top-[250px] lm:left-[250px] lm:size-28">
-            <img src="/images/alice.png" class="" alt="">
+            <img @click="handleClick" src="/images/alice.png" class="" alt="">
         </div>
             <img src="/images/platform.png" alt="" class=" md:w-[90%] mx-auto">
         </div>
