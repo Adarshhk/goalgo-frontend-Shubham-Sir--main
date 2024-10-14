@@ -170,6 +170,10 @@ onMounted(() => observer.observe(section.value));
         </div>
       </div>
     </div>
+    <div class="w-5/6 mt-6 mx-auto -mb-20 border-2 rounded-md border-opacity-15 p-4 border-white ">
+
+<p class="font-Inter text-sm text-center">Open Free Demat & Trading A/c with us at @ 20 rs per order plan | Get 50% offer on 1st time Subscription Plan* - <span class="underline text-algo-orange"><a href="">Open A/c Now</a></span></p>
+    </div>
   </section>
 </template>
 

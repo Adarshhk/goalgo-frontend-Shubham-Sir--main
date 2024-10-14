@@ -26,10 +26,15 @@ const list = [
     }
     
 ]
+
+function handleClick() {
+    window.open("https://app.aliceblueonline.com/OpenAccount.aspx?C=SCHE804", "_blank");
+}
+
 </script>
 
 <template>
-    <section class="p-6 md:p-20  flex flex-col xl:flex-row items-center justify-between 3xl:max-w-[85%]  mx-auto">
+    <section class="p-6 md:p-20 flex flex-col xl:flex-row items-center justify-between 3xl:max-w-[85%]  mx-auto">
         <div class="w-full xl:w-[50%] font-Inter space-y-10">
             <div class="space-y-6 -mb-6">
                 <h1 class=" text-[40px] leading-[50px] md:leading-[70px] md:text-[52px] 2xl:text-[64px]">All-in-one decentralized <span class="text-algo-orange">Algo Trading Platform</span></h1>
@@ -51,8 +56,14 @@ const list = [
                 </li>
             </ul>
         </div>
-        <div class="xl:w-[50%]">
-            <img src="/images/AllInOne.png" alt="" class=" md:w-[90%] mx-auto">
+        
+        <div class="xl:w-[50%] relative" @click="handleClick">
+            <div class="cursor-pointer absolute 2xl:top-[170px] 2xl:left-[160px] 3xl:top-[200px] 3xl:left-[200px] xl:top-[160px] xl:left-[140px] lg:top-[140px] lg:left-[140px] md:left-[200px] md:top-[200px] sm:left-[120px] sm:top-[160px] xs:top-[90px] xs:left-[70px] sm:size-24 md:size-24 lg:size-28 xl:size-28 2xl:size-28 3xl:size-30 xs:size-20 lm:top-[250px] lm:left-[250px] lm:size-28">
+            <img src="/images/alice.png" class="" alt="">
+        </div>
+            <img src="/images/platform.png" alt="" class=" md:w-[90%] mx-auto">
         </div>
     </section>
 </template>
+
+

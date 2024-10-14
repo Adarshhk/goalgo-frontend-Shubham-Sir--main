@@ -8,7 +8,7 @@ const boxes = [
   { startValue: 0, endValue: 850, suffix: '+', description: 'Active Users', decimals: 0 },
   { startValue: 0, endValue: 99.9, suffix: '%', description: 'Trade Execution Accuracy', decimals: 1 },
   { startValue: 0, endValue: 12, suffix: '+', description: 'Customizable Strategies', decimals: 0 },
-  { startValue: 24, endValue: 20, suffix: '+', description: 'Leading Broker Connected', decimals: 0 },
+  { startValue: 0, endValue: 20, suffix: '+', description: 'Leading Broker Connected', decimals: 0 },
 ]
 
 onMounted(() => {
