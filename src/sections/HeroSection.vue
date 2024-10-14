@@ -22,9 +22,9 @@ const handleSubmit = async () => {
     const response = await fetch('/contact-us', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',  // This is crucial for sending JSON
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(form),  // Convert form data to JSON string
+      body: JSON.stringify(form),
     });
     console.log(response)
     showForm.value = false; // Close the modal after submission
@@ -82,11 +82,13 @@ const handleSubmit = async () => {
   </div>
 
   <section class="px-6 md:px-10 py-20 xl:py-44 relative 3xl:max-w-[85%] mx-auto">
-    <div class="absolute left-16 top-32 hidden xl:block">
-      <img src="/images/svg/heroBg1.svg" alt="" />
+    <div class="absolute left-16 top-32 hidden xl:block w-1/5 h-2/3">
+      <img src="/images/svg/zomato.svg" alt="" class="  ml-[70%] shadow-lg floating-image floating-1"/>
+      <img src="/images/svg/bajaj.svg" alt="" class="mt-[6rem] ml-6   shadow-lg floating-image floating-2" />
+      <img src="/images/svg/icici.svg" alt="" class="mt-16 ml-[60%]   shadow-lg floating-image floating-3" />
     </div>
     <div class="absolute top-10 left-[620px] 2xl:left-[720px] hidden xl:block">
-      <img src="/images/svg/heroBg3.svg" alt="" />
+      <img src="/images/svg/tata.svg" alt="" class="  shadow-lg floating-image floating-4"/>
     </div>
 
     <div class="text-white font-Inter text-center space-y-6">
@@ -101,8 +103,10 @@ const handleSubmit = async () => {
       </p>
       <BorderButton @click="handleForm" title="Request a Demo" class="w-[70%] md:w-[40%] xl:w-[20%]" />
     </div>
-    <div class="absolute right-16 top-32 hidden xl:block">
-      <img src="/images/svg/heroBg2.svg" alt="" />
+    <div class="absolute right-16 top-32 hidden xl:block w-1/5 h-2/3">
+      <img src="/images/svg/random.svg" alt="" class="ml-8   shadow-lg floating-image floating-5"/>
+      <img src="/images/svg/sbi.svg" alt="" class="mt-[6rem] ml-[60%]   shadow-lg floating-image floating-6"/>
+      <img src="/images/svg/asianpaints.svg" alt="" class="mt-16   shadow-lg floating-image floating-7"/>
     </div>
   </section>
 </template>
@@ -118,6 +122,29 @@ const handleSubmit = async () => {
 
 .text-algo-orange {
   color: #FFA500;
-  /* Adjust this color to match your design */
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-image {
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-1 { animation-delay: 0s; }
+.floating-2 { animation-delay: 0.5s; }
+.floating-3 { animation-delay: 1s; }
+.floating-4 { animation-delay: 1.5s; }
+.floating-5 { animation-delay: 2s; }
+.floating-6 { animation-delay: 2.5s; }
+.floating-7 { animation-delay: 3s; }
 </style>

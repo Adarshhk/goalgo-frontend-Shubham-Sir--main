@@ -36,11 +36,7 @@ const images = [
         How to
         <span class="text-algo-orange">start way2Algo</span>
       </h1>
-      <div class="px-4 md:px-24">
-        <p class="text-[#8C8C8C] text-base md:text-lg mt-5 mx-auto font-normal max-w-4xl">
-          Our pricing plans are designed to suit traders of all levels, offering flexible options without hidden fees. Get access to premium features and expert tools that help you maximize your returns while minimizing costs.
-        </p>
-      </div>
+      
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mt-10 w-full ">
         <div v-for="(img, index) in images" :key="index" class="flex flex-col items-center  ">
           <img :src="img.img" :alt="img.title" class=" w-18 h-18 mt-10 ">

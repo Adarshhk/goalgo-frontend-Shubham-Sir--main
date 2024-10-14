@@ -33,7 +33,7 @@ onMounted(() => observer.observe(section.value));
 <template>
     <section class="px-6 md:px-10 py-10 xl:py-20 3xl:max-w-[85%] mx-auto">
         <div class="text-white text-center font-Inter space-y-5">
-            <p class="text-algo-orange text-[16px]">Why Goalgo?</p>
+            <p class="text-algo-orange text-[16px]">Why way2algo?</p>
             <h1 class="mx-auto leading-[50px] md:leading-[70px] text-[40px] md:text-[58px] md:w-[90%] xl:text-[64px] xl:w-[60%]">Designed for beginners and <span class="text-algo-orange">experienced traders</span></h1>
             <p class="font-light text-[#8C8C8C]">Our platform is designed to make trading simple, accessible, and profitable for everyone.</p>
         </div>

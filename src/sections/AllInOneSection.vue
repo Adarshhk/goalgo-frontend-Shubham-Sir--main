@@ -29,13 +29,13 @@ const list = [
 </script>
 
 <template>
-    <section class="p-6 md:p-10 flex flex-col xl:flex-row items-center justify-between 3xl:max-w-[85%] mx-auto">
-        <div class="w-full xl:w-[50%] font-Inter space-y-14">
-            <div class="space-y-6">
+    <section class="p-6 md:p-20  flex flex-col xl:flex-row items-center justify-between 3xl:max-w-[85%]  mx-auto">
+        <div class="w-full xl:w-[50%] font-Inter space-y-10">
+            <div class="space-y-6 -mb-6">
                 <h1 class=" text-[40px] leading-[50px] md:leading-[70px] md:text-[52px] 2xl:text-[64px]">All-in-one decentralized <span class="text-algo-orange">Algo Trading Platform</span></h1>
                 <p class="font-normal text-[#8C8C8C] text-[16px] md:w-[520px] w-full lg:w-[520px] ">At <span class="text-algo-orange font-normal">way2algo</span>, we offer a range of features to help you make the most of your trading experience. Here are just a few of the features we offer:</p>
             </div>
-            <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 2xl:gap-12">
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 2xl:gap-8">
                 <li v-for="item in list" class="font-Inter flex items-start gap-2 ">
                     
                         <i class="pi pi-check-circle text-algo-orange text-[30px] pt-2"></i>
