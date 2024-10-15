@@ -17,7 +17,7 @@ import How from "../sections/How.vue"
 
     <main>
         <Navbar/>
-        <HeroSection id="home" />
+        <HeroSection />
         <FeaturesSection1 id="feature" />
         <BeginnersSection id="beginner" />
         <AllInOneSection id="aio" />

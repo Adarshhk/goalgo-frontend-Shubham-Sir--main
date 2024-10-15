@@ -36,7 +36,7 @@ onMounted(() => observer.observe(section.value));
 <template>
   <div class="text-white">
     <div class="w-[80%] mx-auto text-center ">
-      <h1 class="mt-10 text-6xl font-Inter mb-4">Who <span class="text-algo-orange">we are</span></h1>
+      <h1 class="mt-10 sm:text-6xl xs:text-4xl font-Inter mb-4">Who <span class="text-algo-orange">we are</span></h1>
      
       <div ref="section" class="mt-14 lg:flex-nowrap md:flex-nowrap xl:flex-nowrap flex justify-evenly gap-16 sm:gap-6 flex-wrap overflow-auto overflow-y-hidden">
         <div 
